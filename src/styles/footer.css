@@ -1,0 +1,58 @@
+.footerWrapper {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    z-index: 10;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.angleUpIconWrapper {
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.angleUpIconWrapper:hover, .footerIcon.angleUp:hover {
+    transform: translateY(-3px);
+    fill: white;
+}
+
+.footerIconWrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footerIcon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    fill: rgb(37, 37, 37);
+    transition: all 0.2s ease-in-out;
+}
+
+.footerIcon:hover {
+    fill: white;
+}
+
+.footerIcon.gitHub {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 500px) {
+    .angleUpIconWrapper:hover, .footerIcon.angleUp:hover {
+        transform: unset;
+        fill: rgb(37, 37, 37);;
+    }
+    .footerIcon:hover {
+        fill: rgb(37, 37, 37);
+    }
+}

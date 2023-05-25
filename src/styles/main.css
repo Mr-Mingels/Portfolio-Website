@@ -1,0 +1,95 @@
+.mainWrapper {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 660px;
+}
+
+.mainContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 200px 0 200px;
+} 
+
+.name {
+    font-size: 80px;
+    transform: translateZ(0);
+}
+
+.name.show {
+    animation: main-text 0.7s ease-in-out;
+}
+
+.jobTitle {
+    font-size: 50px;
+    font-weight: 200;
+    margin-top: 5px;
+    transform: translateZ(0);
+}
+
+.jobTitle.show {
+    animation: main-text 0.7s ease-in-out;
+}
+
+@keyframes main-text {
+    from {
+        transform: translateY(-120px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contactBtn {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    margin: 15px 0 40px 0;
+    font-size: 18px;
+    transform: translateZ(0);
+    background-image: linear-gradient(to left, white 50%, black 50%);
+    background-position: 0%;
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+  .contactBtn:hover {
+    background-position: 100%;
+    color: black;
+  }
+
+  
+
+  @media only screen and (max-width: 1200px) {
+    .mainContent {
+        padding-left: calc(200px + (100vw - 1200px) / 4);
+        padding-right: calc(200px + (100vw - 1200px) / 3);
+    }
+    
+    .name {
+        font-size: calc(80px + (100vw - 1200px) / 20);
+    }
+    
+    .jobTitle {
+        font-size: calc(50px + (100vw - 1200px) / 35);
+    }
+    }
+    @media only screen and (max-width: 499px) {
+        .contactBtn:hover {
+            background-position: 0%;
+            color: white;
+        }
+    }
+    @media only screen and (max-width: 414px) {
+        .mainContent {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }

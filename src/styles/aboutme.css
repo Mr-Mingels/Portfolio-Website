@@ -1,0 +1,206 @@
+.aboutMeWrapper {
+    height: 700px;
+    background-color: black;
+    color: white;
+}
+
+.aboutMeContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    height: 100%;
+}
+
+.aboutMeTxtWrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 80px
+}
+
+.aboutMeTitle {
+    font-size: 26px;
+    margin: 0 0 5px 2px;
+    transform: translateZ(0);
+}
+
+.aboutMeTitle.show {
+    animation: transform-top-to-bottom 0.7s ease-in-out;
+}
+
+@keyframes transform-top-to-bottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.border {
+    border: 1px solid white;
+    width: 140px;
+    transform: translateZ(0);
+}
+
+.border.show {
+    animation: transform-right-to-left 0.7s ease-in-out;
+}
+
+@keyframes transform-right-to-left {
+    from {
+        transform: translateX(450px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aboutMeParagraphs {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 100;
+    transform: translateZ(0);
+}
+
+.aboutMeParagraphs.show {
+    animation: transform-left-to-right 0.7s ease-in-out
+}
+
+@keyframes transform-left-to-right {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.resumeBtn {
+    background-color: white;
+    width: 200px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+    font-size: 18px;
+    transform: translateZ(0);
+    background-image: linear-gradient(to left, white 50%, black 50%);
+    background-position: 0%;
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease-in-out;
+}
+
+.resumeBtn:hover {
+    background-position: 100%;
+    color: black;
+}
+
+.resumeBtn.show {
+    animation: fade-in 0.7s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.aboutMeImgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+
+.aboutMeImg {
+    align-self: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .aboutMeContent {
+            gap: calc(100px + (100vw - 1200px) / 5);
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .aboutMeTxtWrapper {
+            padding-left: calc(70px + (100vw - 1200px) / 3);
+        }
+        .aboutMeTitle {
+            font-size: calc(26px + (100vw - 1200px) / 100);
+        }
+        .border {
+            width: calc(140px + (100vw - 1200px) / 20);
+        }
+        .aboutMeParagraphs {
+            font-size: calc(18px + (100vw - 1200px) / 100);
+        }
+        .aboutMeImg {
+            width: calc(500px + (100vw - 1200px) / 3);
+            height: calc(500px + (100vw - 1200px) / 3);
+        }
+        .aboutMeImgWrapper {
+            padding-right: calc(70px + (100vw - 1200px) / 3);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .aboutMeContent {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 670px;
+            padding: 10px;
+            padding-bottom: 20px;
+            gap: 0px;
+        }
+        .aboutMeParagraphs {    
+            margin-top: 20px;
+            font-size: calc(13.6px + (100vw - 768px) / 200);
+        }
+        .aboutMeTitle {
+            font-size: calc(21.6px + (100vw - 768px) / 200);
+        }
+        .border {
+            width: calc(140px + (100vw - 768px) / 20);
+        }
+        .aboutMeImg {
+            width: calc(356px + (100vw - 768px) / 5);
+            height: calc(356px + (100vw - 768px) / 5);
+        }
+        .resumeBtn {
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 8px 0 8px 0;
+            width: 160px;
+            align-self: flex-start;
+        }
+    }
+    @media only screen and (max-width: 499px) {
+        .resumeBtn:hover {
+            background-position: 0%;
+            color: white;
+        }
+    }

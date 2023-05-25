@@ -1,0 +1,363 @@
+.resumePageWrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.resumePageContent {
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.resumePageBtns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homeBtn {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 66px;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateZ(0);
+    background-image: linear-gradient(to left, white 50%, black 50%);
+    background-position: 0%;
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.homeBtn:hover {
+    background-position: 100%;
+    color: black;
+}
+
+.pdfBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    color: black;
+    fill: black;
+    width: 66px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateZ(0);
+    background-image: linear-gradient(to left, black 50%, white 50%);
+    background-position: 0%;
+    background-size: 200% 100%;
+    transition: background-position 0.3s ease-in-out;
+    text-decoration: none;
+}
+  
+.pdfBtn:hover {
+    background-position: 100%;
+    color: white;
+    fill: white;
+}
+
+.pdfBtnSvg {
+    width: 11px;
+    height: 11px;
+}
+
+.resumeWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resume-title-bottomBorder-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeTitle {
+    display: flex;
+    align-items: flex-end;
+    font-size: 26px;
+    color: white;
+    margin-left: 1px;
+    transform: translateZ(0);
+}
+
+.resumeTitleBottomBorder {
+    border: 2px solid white;
+    width: 140px;
+    transform: translateZ(0);
+    margin-bottom: 24px;
+}
+
+.resumeContent {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+
+.resumeImg {
+    width: 900px;
+    height: 1100px;
+    pointer-events: none;
+}
+
+.resumeLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 284.2px;
+}
+
+.linkTitle {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    height: 40px;
+    color: white;
+    margin-left: 1px;
+    transform: translateZ(0);
+}
+
+.linkTitleBottomBorder {
+    border: 2px solid white;
+    width: 85px;
+    transform: translateZ(0);
+    margin-bottom: 32px;
+}
+
+.resumeProjectTitle {
+    color: #2079c7;
+}
+
+.resumeProjectsLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.projectLinksWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectLink, .projectGitLink {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #1155cc;
+}
+
+.projectLink {
+    border-right: 1px solid white;
+}
+
+.userInfoTitle {
+    color: #2079c7;
+}
+
+.resumeUserInfoLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.userInfoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.userInfo {
+    font-size: 14px;
+    color: #1155cc;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+.resumeLoadingScreenWrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.resumeLoadingScreen {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    margin:15px auto;
+    position: relative;
+    color: #FFF;
+    left: -100px;
+    box-sizing: border-box;
+    animation: shadowRolling 2s linear infinite;
+  }
+  
+  @keyframes shadowRolling {
+    0% {
+      box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    12% {
+      box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    25% {
+      box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+    }
+    36% {
+      box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+      box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white;
+    }
+    62% {
+      box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white;
+    }
+    75% {
+      box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white;
+    }
+    87% {
+      box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white;
+    }
+    100% {
+      box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+
+
+
+@media screen and (min-width: 1536.1px) and (max-width: 100vw) {
+    .mainContent {
+        padding: calc(60px + (100vw - 1536px) / 35);
+    }
+}
+
+@media (max-width: 1536px) {
+    .resumePageContent {
+        padding-top: calc(60px + (100vw - 1536px) / 35);
+        padding-bottom: calc(60px + (100vw - 1536px) / 35);
+        padding-left: calc(100px + (100vw - 1536px) / 9);
+        padding-right: calc(100px + (100vw - 1536px) / 9);
+    }
+    .homeBtn, .pdfBtn {
+        padding: calc(10px + (100vw - 1536px) / 250);
+        font-size: calc(16px + (100vw - 1536px) / 300);
+    }
+    .resumeTitle {
+        font-size: calc(26px + (100vw - 1536px) / 250);
+    }
+    .resumeTitleBottomBorder {
+        width: calc(140px + (100vw - 1536px) / 60);
+    }
+    .resumeImg {
+        width: calc(900px + (100vw - 1536px) / 2);
+        height: calc(1100px + (100vw - 1536px) / 2);
+    }
+    .resumeLinksWrapper {
+        width: calc(284.2px + (100vw - 1536px) / 8.5);
+    }
+    .linkTitle {
+        font-size: calc(20px + (100vw - 1536px) / 250);
+    }
+    .linkTitleBottomBorder {
+        width: calc(85px + (100vw - 1536px) / 40);
+    }
+    .projectLinksWrapper, .userInfoWrapper, .resumeProjectTitle, .userInfoTitle {
+        font-size: calc(16px + (100vw - 1536px) / 250);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .projectLink, .projectGitLink, .userInfo {
+        font-size: calc(14px + (100vw - 1536px) / 250);
+    }
+}
+
+@media (max-width: 800px) {
+    .resumePageContent {
+        padding: 39px 18px;
+    }
+    .homeBtn, .pdfBtn {
+        padding: calc(10px + (100vw - 800px) / 100);
+        font-size: calc(16px + (100vw - 800px) / 150);
+    }
+    .resumeTitle {
+        font-size: calc(26px + (100vw - 800px) / 100);
+    }
+    .resumeTitleBottomBorder {
+        width: calc(140px + (100vw - 800px) / 20);
+    }
+    .resumeContent {
+        flex-direction: column;
+    }
+    .resumeImg {
+        width: 100%;
+        height: calc(950px + (100vw - 800px) / 1);
+    }
+    .resumeLinksWrapper {
+        width: 100%;
+        align-items: center;
+    }
+    .linkTitle {
+        font-size: calc(20px + (100vw - 800px) / 250);
+    }
+    .linkTitleBottomBorder {
+        width: calc(108.8px + (100vw - 800px) / 40);
+        margin-bottom: 48px;
+    }
+    .resumeProjectsLinks, .resumeUserInfoLinksWrapper {
+        width: calc(300px + (100vw - 800px) / 10);
+    }
+    .projectLinksWrapper, .userInfoWrapper, .resumeProjectTitle, .userInfoTitle {
+        font-size: calc(16px + (100vw - 800px) / 250);
+    }
+    .resumeProjectTitle, .userInfoTitle {
+        text-align: center;
+    }
+    .projectLinksWrapper, .userInfoWrapper {
+        justify-content: space-between;
+    }
+    .projectLink, .projectGitLink, .userInfo {
+        font-size: calc(14px + (100vw - 800px) / 250);
+    }
+}
+
+@media (max-width: 500px) {
+    .resumePageContent {
+        padding: 24px 8px;
+        gap: calc(64px + (100vw - 500px) / 10);
+    }
+    .resumeTitleBottomBorder {
+        margin-bottom: 12px;
+    }
+    .homeBtn:hover, .pdfBtn:hover {
+        background-position: unset;
+        color: unset;
+        fill: unset;
+    }
+    .pdfBtn:hover {
+        color: black;
+    }
+}

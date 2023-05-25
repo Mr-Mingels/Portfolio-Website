@@ -1,0 +1,221 @@
+.navBarWrapper {
+    height: 75px;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navBarContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    color: white;
+}
+
+.navTitle {
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.navImageWrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none;
+}
+
+.navImage {
+    width: 60px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navItem {
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navItem::after {
+    content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  will-change: width, left;
+  }
+  
+.navItem:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
+.hamburgerMenu {
+    display: none;
+    height: 45px;
+    width: 45px;
+    margin-right: 40px;
+    cursor: pointer;
+    z-index: 1;
+    border: 0px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.hamburgerMenuLine {
+    width: 29px;
+    border-bottom: 3px solid white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+}
+
+.hamburgerMenu:hover {
+    background-color: white;
+    border-radius: 90px;
+}
+
+.hamburgerMenu:hover .hamburgerMenuLine {
+    border-color: black;
+}
+
+.fullPageWrapper {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    transform: translateZ(0);
+    transform: translateY(770px);
+    transition: all 0.7s ease-in-out;
+}
+
+.fullPageWrapper.show {
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(0);
+    z-index: 10;
+}
+
+.navPopUpWrapper {
+    position: fixed;
+    height: 480px;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    transform: translateZ(0);
+    transform: translateY(-480px);
+    transition: all 0.7s ease-in-out;
+}
+
+.navPopUpWrapper.show {
+    transform: translateY(0);
+}
+
+.navPopUpContent {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #131313, #161616, #191919, #212121);
+}
+
+.burgerNavList {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.burgerNavItem {
+    color: white;
+    font-size: 26px;
+    border-bottom: 2px solid white;
+    width: 600px;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.navBarPopUpCloseBtn {
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 50px;
+}
+
+
+  @media only screen and (max-width: 992px) {
+    .navList {
+        display: none;
+    }
+    .hamburgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburgerMenu:hover {
+        background-color: unset;
+        border-radius: unset;
+    }
+    .hamburgerMenu:hover .hamburgerMenuLine {
+        border-color: unset;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .navImageWrapper {
+        justify-content: flex-start;
+    }
+    .navImage {
+        margin-left: 40px;
+    }
+    .navBarContent {
+        justify-content: flex-end;
+    }
+
+    .navTitle {
+        display: none;
+    }
+    .burgerNavItem {
+        width: calc(600px + (100vw - 700px) / 1);
+    }
+  }
+
+  @media only screen and (max-width: 537.60px) {
+  }
+
+  @media only screen and (max-width: 414px) {
+    .hamburgerMenu {
+        transition: none;
+        margin-right: calc(40px + (100vw - 414px) / 7);
+    }
+    .navImage {
+        margin-left: calc(40px + (100vw - 414px) / 7);
+    }
+  }
+
