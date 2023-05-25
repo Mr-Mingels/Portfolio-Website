@@ -10,6 +10,15 @@ import quickSumMobileScreenShot from '../assets/quickSumMobileScreenShot.png'
 const Projects = () => {
     const [showAnimation, setShowAnimation] = useState(false)
     const contentRef = useRef(null);
+    const [mobile, setMobile] = useState(false)
+
+    useEffect(() => {
+      if(window.innerWidth <= 500) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    },[window.innerWidth])
 
     useEffect(() => {
         // Create an observer instance
@@ -28,7 +37,7 @@ const Projects = () => {
             // Set the root to null to use the browser viewport as the observer
             root: null,
             // Set the threshold to 0.5 to trigger the callback when the element is 50% in the viewport
-            threshold: 0.038,
+            threshold: mobile ? 0.01 : 0.038,
           }
         );
     

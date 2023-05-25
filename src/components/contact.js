@@ -29,8 +29,17 @@ const Contact = () => {
     const [messageSent, setMessageSent] = useState(false)
     const [messageTextContent, setMessageTextContent] = useState('')
     const [borderColor, setBorderColor] = useState('')
+    const [mobile, setMobile] = useState(false)
     const contentRef = useRef(null);
     const form = useRef();
+
+    useEffect(() => {
+      if(window.innerWidth <= 500) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    },[window.innerWidth])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,7 +54,7 @@ const Contact = () => {
       },
       {
         root: null,
-        threshold: 0.3,
+        threshold: mobile ? 0.02 : 0.1,
       }
     );
     observer.observe(contentRef.current);

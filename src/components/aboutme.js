@@ -6,8 +6,17 @@ import { Link } from "react-router-dom";
 const AboutMe = () => {
 
     const [showAnimation, setShowAnimation] = useState(false)
+    const [mobile, setMobile] = useState(false)
 
     const contentRef = useRef(null);
+
+    useEffect(() => {
+      if(window.innerWidth <= 500) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    },[window.innerWidth])
 
   useEffect(() => {
     // Create an observer instance
@@ -26,7 +35,7 @@ const AboutMe = () => {
         // Set the root to null to use the browser viewport as the observer
         root: null,
         // Set the threshold to 0.5 to trigger the callback when the element is 50% in the viewport
-        threshold: 0.1,
+        threshold: mobile ? 0.02 : 0.1,
       }
     );
 
