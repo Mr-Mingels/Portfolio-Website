@@ -4,7 +4,31 @@ import '../styles/skills.css'
 const Skills = () => {
 
     const [showAnimation, setShowAnimation] = useState(false)
+    const [mobile, setMobile] = useState(false)
+
     const contentRef = useRef(null);
+
+    useEffect(() => {
+      const checkMobile = () => {
+        if(window.innerWidth <= 500) {
+          setMobile(true)
+          console.log('hello there')
+        } else {
+          setMobile(false)
+        }
+      }
+    
+      // Initial check
+      checkMobile();
+    
+      // Add event listener to window resize
+      window.addEventListener('resize', checkMobile);
+    
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', checkMobile);
+      }
+    }, []);
 
     useEffect(() => {
         // Create an observer instance
@@ -23,7 +47,7 @@ const Skills = () => {
             // Set the root to null to use the browser viewport as the observer
             root: null,
             // Set the threshold to 0.5 to trigger the callback when the element is 50% in the viewport
-            threshold: 0.038,
+            threshold: mobile ? 0.001 : 0.1,
           }
         );
     
@@ -34,7 +58,7 @@ const Skills = () => {
         return () => {
           observer.disconnect();
         };
-      }, []);
+      }, [mobile]);
 
     return (
         <section className="skillsWrapper" name='skills'>

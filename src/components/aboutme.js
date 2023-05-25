@@ -11,12 +11,25 @@ const AboutMe = () => {
     const contentRef = useRef(null);
 
     useEffect(() => {
-      if(window.innerWidth <= 500) {
-        setMobile(true)
-      } else {
-        setMobile(false)
+      const checkMobile = () => {
+        if(window.innerWidth <= 500) {
+          setMobile(true)
+        } else {
+          setMobile(false)
+        }
       }
-    },[window.innerWidth])
+    
+      // Initial check
+      checkMobile();
+    
+      // Add event listener to window resize
+      window.addEventListener('resize', checkMobile);
+    
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', checkMobile);
+      }
+    }, []);
 
   useEffect(() => {
     // Create an observer instance
@@ -35,7 +48,7 @@ const AboutMe = () => {
         // Set the root to null to use the browser viewport as the observer
         root: null,
         // Set the threshold to 0.5 to trigger the callback when the element is 50% in the viewport
-        threshold: mobile ? 0.02 : 0.1,
+        threshold: mobile ? 0.0001 : 0.1,
       }
     );
 
@@ -46,7 +59,7 @@ const AboutMe = () => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [mobile]);
     return (
         <section className="aboutMeWrapper" name='about'>
             <div className="aboutMeContent">
