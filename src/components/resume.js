@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import { Document, Page, pdfjs } from 'react-pdf';
 import { Link } from "react-router-dom";
 import '../styles/resume.css'
 
 import resume from '../assets/Resume.pdf';
 import resumeImg from '../assets/Resume.png'
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
 const Resume = () => {
