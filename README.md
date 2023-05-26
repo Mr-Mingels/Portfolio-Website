@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+### **[Portfolio Website](https://portfolio-website-two-navy.vercel.app/)**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Project Introduction:**
 
-## Available Scripts
+Welcome to the repository of my personal portfolio website. This site is designed to showcase my technical skills, professional projects, and provide insight into my background and experience in the field of software development
 
-In the project directory, you can run:
+Built with the power of React, the website is organized as a Single Page Application (SPA) which provides a seamless browsing experience. From the landing page, users can smoothly navigate to any section of the website using the navbar, with options including 'About Me', 'Projects', 'Skills', 'Resume', and 'Contact Me'. This is made possible by leveraging the capabilities of the React Router library
 
-### `npm start`
+Through its modern and responsive design, the website ensures an engaging user experience across all devices. The CSS-based animations add a dynamic touch that elevates the overall look and feel of the site
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **About The Project:**
 
-### `npm test`
+![An image of the home screen of my portfolio website application](./public/images/portfolioWebsiteScreenShot.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My portfolio website is a single-page application showcasing my skills, projects, and professional information to potential employers and collaborators
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The common functionalities are:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The user can smoothly scroll down to any section of the site by clicking on one of the options in the navbar
+- On the 'About Me' section, the user can learn more about my personal background
+- In the 'Skills' section, the user can view the skills that I possess. These are depicted in three separate categories: Technical Skills, Tools and Technologies, and Soft Skills
+- In the 'Projects' section, the user can see a list of the projects that I've worked on. Each project has a description, and include links to visit the project's website or to view the source code
+- In the 'Contact' section, the user can send me a message directly from the website. This form validates the user's input and displays error messages if the input is not valid. Upon successful submission, a message is displayed to the user
+- In the 'Resume' section, the user can view an image of your resume directly on the website
+- A 'PDF' button is provided for users to view a PDF version of your resume
+- In the 'Resume' section, there's a dedicated 'Links' section. Here, users can access the websites of my projects, access the corresponding GitHub repositories, send me an email, and visit my GitHub profile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### **Built With:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- JavaScript (ES6+)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- HTML/CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Key Concepts:**
 
-## Learn More
+- Intersection Observer API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Resume Display
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- CSS Animations
 
-### Code Splitting
+- EmailJS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Responsive Design
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Project Showcasing
