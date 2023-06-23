@@ -35,6 +35,12 @@ const Resume = () => {
                             <span className="linkTitleBottomBorder"></span>
                             <div className="resumeProjectsLinks">
                                 <h4 className="resumeProjectTitle">Projects</h4>
+                                <div className="projectLinksWrapper">Chatter Sphere: <div><a className="projectLink" target="_blank" 
+                                rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}
+                                href="https://chatter-sphere.onrender.com/">Website</a>
+                                <a className="projectGitLink" href="https://github.com/Mr-Mingels/Chatter-Sphere" target="_blank" 
+                                rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}>GitHub</a>
+                                </div></div>
                                 <div className="projectLinksWrapper">FotoFolio: <div><a className="projectLink" target="_blank" 
                                 rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}
                                 href="https://foto-folio.vercel.app/">Website</a>

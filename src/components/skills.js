@@ -89,7 +89,10 @@ const Skills = () => {
                                 <li className="listedSkill">CSS 3</li>
                                 <li className="listedSkill">Java Script</li>
                                 <li className="listedSkill">React</li>
-                                <li className="listedSkill">BootStrap</li>
+                                <li className="listedSkill">Node.js</li>
+                                <li className="listedSkill">Express</li>
+                                <li className="listedSkill">Mongoose</li>
+                                <li className="listedSkill">MongoDB</li>
                             </ul>
                         </div>
                     </div>
@@ -102,6 +105,7 @@ const Skills = () => {
                                 <li className="listedSkill">Strong Work Ethic</li>
                                 <li className="listedSkill">Good Communication Skills</li>
                                 <li className="listedSkill">Patient and Persistent</li>
+                                <li className="listedSkill">Adaptability</li>
                             </ul>
                         </div>
                     </div>

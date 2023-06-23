@@ -86,8 +86,11 @@
 }
 
 .resumeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    width: 200px;
+    width: 136.8px;
     border: 2px solid white;
     color: white;
     padding: 10px 30px 10px 30px;
@@ -99,6 +102,7 @@
     background-position: 0%;
     background-size: 200% 100%;
     transition: background-position 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .resumeBtn:hover {
@@ -194,7 +198,7 @@
             margin-top: 20px;
             font-size: 16px;
             padding: 8px 0 8px 0;
-            width: 160px;
+            width: 156.8px;
             align-self: flex-start;
         }
     }

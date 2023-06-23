@@ -189,7 +189,7 @@
         margin-bottom: 20px;
     }
     .skillsCardsContent {
-        height: 100px;
+        height: 120px;
         width: calc(600px + (100vw - 768px) / 1);
     }
     .technicalSkillsContent {

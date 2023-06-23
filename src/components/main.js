@@ -49,7 +49,7 @@ const Main = () => {
         <h3
           className={`jobTitle ${showAnimation ? "show" : ""}`}
         >
-          Front-End Software Developer
+          Full-Stack Software Developer
         </h3>
         <button className='contactBtn'>
         <Link

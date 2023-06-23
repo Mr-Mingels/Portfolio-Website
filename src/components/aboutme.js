@@ -71,7 +71,7 @@ const AboutMe = () => {
                     <span className={`border ${showAnimation ? 'show' : ''}`}></span>
                     <p 
                     className={`aboutMeParagraphs ${showAnimation ? 'show' : ''}`}>
-                    Hello. I'm Pierre Mingels, a front-end software developer from San Diego, California. My focus is on building 
+                    Hello. I'm Pierre Mingels, a full-stack software developer from San Diego, California. My focus is on building 
                     functional, aesthetically pleasing applications that offer users a clean and modern interface.</p>
                     <p 
                     className={`aboutMeParagraphs ${showAnimation ? 'show' : ''}`}>
@@ -83,7 +83,7 @@ const AboutMe = () => {
                         When I'm not coding, you can find me reading, playing FPS games, at the gym, or spending quality 
                         time with friends. Balancing my professional and personal life is key to maintaining a creative and focused mindset 
                         in my work.</p>
-                    <Link to='/resume'><button className={`resumeBtn ${showAnimation ? 'show' : ''}`}>Resume</button></Link>
+                      <Link to='/resume' className={`resumeBtn ${showAnimation ? 'show' : ''}`}>Resume</Link>
                 </div>
                 <div className="aboutMeImgWrapper">
                     <img src={DeveloperImg} className='aboutMeImg'></img>
