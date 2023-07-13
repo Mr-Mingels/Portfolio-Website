@@ -48,9 +48,13 @@
     animation: projects-title-border-bottom 1s ease-in-out;
 }
 
+.projectsTitleBottomBorder.show.mobile {
+    animation: projects-title-border-bottom-mobile 1s ease-in-out;
+}
+
 @keyframes projects-title-border-bottom {
     from {
-        opacity: 1;
+        opacity: 0;
         transform: translateX(1015px);
     }
     to {
@@ -256,5 +260,18 @@
       }
     .projectsSquare {
         top: 2864px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    @keyframes projects-title-border-bottom-mobile {
+        from {
+            opacity: 0;
+            transform: translateX(calc(330px + (100vw - 500px) / 1));
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

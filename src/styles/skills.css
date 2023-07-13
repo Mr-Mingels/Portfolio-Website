@@ -13,7 +13,7 @@
     display: flex;
     align-items: flex-end;
     font-size: 26px;
-    height: 97.5px;
+    height: 97px;
     margin-left: 1px;
     transform: translateZ(0);
 }
@@ -41,6 +41,10 @@
 
 .skillsTitleBottomBorder.show {
     animation: skills-title-border-bottom 1s ease-in-out;
+}
+
+.skillsTitleBottomBorder.show.mobile {
+    animation: skills-title-border-bottom-mobile 1s ease-in-out;
 }
 
 @keyframes skills-title-border-bottom {
@@ -241,9 +245,20 @@
     }
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 500px) {
     .technicalSkillsContent:hover, .skillsCardsContent:hover {
         transform: unset;
         box-shadow: unset;
+    }
+    @keyframes skills-title-border-bottom-mobile {
+        from {
+            transform: translateX(calc(380px + (100vw - 500px) / 1));
+            opacity: 0;
+        }
+    
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

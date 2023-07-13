@@ -68,7 +68,7 @@ const AboutMe = () => {
                 className='aboutMeTxtWrapper'>
                     <h3 
                     className={`aboutMeTitle ${showAnimation ? "show" : ""}`}>About me</h3>
-                    <span className={`border ${showAnimation ? 'show' : ''}`}></span>
+                    <span className={`border ${showAnimation ? 'show' : ''} ${window.innerWidth <= 500 ? 'mobile' : ''}`}></span>
                     <p 
                     className={`aboutMeParagraphs ${showAnimation ? 'show' : ''}`}>
                     Hello. I'm Pierre Mingels, a full-stack software developer from San Diego, California. My focus is on building 
@@ -80,9 +80,7 @@ const AboutMe = () => {
                         with the latest technological advancements.</p>
                     <p 
                     className={`aboutMeParagraphs ${showAnimation ? 'show' : ''}`}>
-                        When I'm not coding, you can find me reading, playing FPS games, at the gym, or spending quality 
-                        time with friends. Balancing my professional and personal life is key to maintaining a creative and focused mindset 
-                        in my work.</p>
+                        When I'm not coding, I'm usually, playing FPS games, at the gym, or hanging out with friends.</p>
                       <Link to='/resume' className={`resumeBtn ${showAnimation ? 'show' : ''}`}>Resume</Link>
                 </div>
                 <div className="aboutMeImgWrapper">

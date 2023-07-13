@@ -66,7 +66,7 @@ const Skills = () => {
             ref={contentRef}
             className="skillsContent">
                 <h3 className={`skillsTitle ${showAnimation ? 'show' : ''}`}>Skills</h3>
-                <span className={`skillsTitleBottomBorder ${showAnimation ? 'show' : ''}`}></span>
+                <span className={`skillsTitleBottomBorder ${showAnimation ? 'show' : ''} ${window.innerWidth <= 500 ? 'mobile' : ''}`}></span>
                 <div className="allSkillsWrapper">
                     <div className="skillsCardsWrapper">
                         <div className={`skillsCardsContent ${showAnimation ? 'show' : ''}`}>

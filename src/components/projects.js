@@ -69,7 +69,7 @@ const Projects = () => {
         <section className="projectsWrapper" name='projects'>
             <div className="projectsContent" ref={contentRef}>
                 <h3 className={`projectsTitle ${showAnimation ? 'show' : ''}`}>Projects</h3>
-                <span className={`projectsTitleBottomBorder ${showAnimation ? 'show' : ''}`}></span>
+                <span className={`projectsTitleBottomBorder ${showAnimation ? 'show' : ''} ${window.innerWidth <= 500 ? 'mobile' : ''}`}></span>
                 <div className="listedProjectsWrapper">
                     <div className={`projectBoxWrapper ${showAnimation ? 'show' : ''}`}>
                         <img className="projectImg" src={window.innerWidth > 584 ? fotoFolioScreenShot : fotoFolioMobileScreenShot}/>

@@ -50,6 +50,10 @@
     animation: transform-right-to-left 0.7s ease-in-out;
 }
 
+.border.show.mobile {
+    animation: transform-right-to-left-mobile 0.7s ease-in-out;
+}
+
 @keyframes transform-right-to-left {
     from {
         transform: translateX(450px);
@@ -202,9 +206,21 @@
             align-self: flex-start;
         }
     }
-    @media only screen and (max-width: 499px) {
+    @media only screen and (max-width: 500px) {
         .resumeBtn:hover {
             background-position: 0%;
             color: white;
+        }
+
+        @keyframes transform-right-to-left-mobile {
+            from {
+                transform: translateX(calc(360px + (100vw - 500px) / 1));
+                opacity: 0;
+            }
+        
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     }
