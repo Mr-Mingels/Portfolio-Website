@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef} from "react";
 import '../styles/projects.css'
 import fotoFolioScreenShot from '../assets/fotoFolioScreenShot.png'
 import puckMasterScreenShot from '../assets/puckMasterScreenShot.png'
-import quickSumScreenShot from '../assets/quickSumScreenShot.png'
+import finTrackDesktopScreenShot from '../assets/finTrackDesktopScreenShot.png'
+import finTrackMobileScreenShot from '../assets/finTrackMobileScreenShot.png'
 import fotoFolioMobileScreenShot from '../assets/fotoFolioMobileScreenShot.png'
 import puckMasterMobileScreenShot from '../assets/puckMasterMobileScreenShot.png'
-import quickSumMobileScreenShot from '../assets/quickSumMobileScreenShot.png'
 import chatterSphereScreenShot from '../assets/chatterSphereDesktopScreenShot.png'
 import chatterSphereMobileScreenShot from '../assets/chatterSphereMobileScreenShot.png'
 
@@ -124,13 +124,13 @@ const Projects = () => {
                         </div>
                     </div>
                     <div className={`projectBoxWrapper ${showAnimation ? 'show' : ''}`}>
-                        <img className="projectImg" src={window.innerWidth > 584 ? quickSumScreenShot : quickSumMobileScreenShot}/>
+                        <img className="projectImg" src={window.innerWidth > 584 ? finTrackDesktopScreenShot : finTrackMobileScreenShot}/>
                         <div className="projectInfoWrapper">
-                            <h3 className="projectTitle">Quick-Sum</h3>
-                            <p className="projectDescription">A summarization application that quickly condenses articles and blog posts 
-                            by simply pasting the URL</p> 
+                            <h3 className="projectTitle">Fin Track</h3>
+                            <p className="projectDescription">Fin Track is a comprehensive app for budget planning and expense tracking, 
+                            providing intuitive financial management.</p> 
                             <div className="projectBtnWrapper">
-                                <a href="https://quicksum-production.up.railway.app" target="_blank" rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}
+                                <a href="https://fin-track.onrender.com/" target="_blank" rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}
                                 className="projectLiveDemoBtn"><svg xmlns="http://www.w3.org/2000/svg" className="eyeImg" 
                                 viewBox="0 0 576 512"><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 
                                 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 
@@ -139,7 +139,7 @@ const Projects = () => {
                                 0-13.9-1.2-20.3-3.3c-5.5-1.8-11.9 1.6-11.7 7.4c.3 6.9 1.3 13.8 3.2 20.7c13.7 51.2 66.4 81.6 
                                 117.6 67.9s81.6-66.4 67.9-117.6c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 
                                 3.3 13.2 3.3 20.3z"/></svg>Live Demo</a>
-                                <a href="https://github.com/Mr-Mingels/QuickSum" target="_blank" rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()} 
+                                <a href="https://github.com/Mr-Mingels/FinTrack" target="_blank" rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()} 
                                 className="projectViewCodeBtn"><svg xmlns="http://www.w3.org/2000/svg" className="codingImg" 
                                 viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 
                                 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 

@@ -53,10 +53,10 @@ const Resume = () => {
                                 <a className="projectGitLink" href="https://github.com/Mr-Mingels/Puck-Master" target="_blank" 
                                 rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}>GitHub</a>
                                 </div></div>
-                                <div className="projectLinksWrapper">Quick-Sum: <div><a className="projectLink" target="_blank" 
+                                <div className="projectLinksWrapper">Fin Track: <div><a className="projectLink" target="_blank" 
                                 rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}
-                                href="https://quicksum-production.up.railway.app/">Website</a>
-                                <a className="projectGitLink" href="https://github.com/Mr-Mingels/QuickSum" target="_blank" 
+                                href="https://fin-track.onrender.com/">Website</a>
+                                <a className="projectGitLink" href="https://github.com/Mr-Mingels/FinTrack" target="_blank" 
                                 rel="noopener noreferrer" onMouseDown={(e) => e.preventDefault()}>GitHub</a>
                                 </div></div>
                             </div>

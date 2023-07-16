@@ -78,6 +78,7 @@ const Skills = () => {
                                 <li className="listedSkill">Webpack</li>
                                 <li className="listedSkill">Git Bash</li>
                                 <li className="listedSkill">VS Code</li>
+                                <li className="listedSkill">Knex</li>
                             </ul>
                         </div>
                     </div>
@@ -85,14 +86,14 @@ const Skills = () => {
                         <div className={`technicalSkillsContent ${showAnimation ? 'show' : ''}`}>
                             <h3 className="skillTitle">Technical Skills</h3>
                             <ul className="skillsList">
-                                <li className="listedSkill">HTML 5</li>
-                                <li className="listedSkill">CSS 3</li>
+                                <li className="listedSkill">HTML/CSS</li>
                                 <li className="listedSkill">Java Script</li>
                                 <li className="listedSkill">React</li>
                                 <li className="listedSkill">Node.js</li>
                                 <li className="listedSkill">Express</li>
-                                <li className="listedSkill">Mongoose</li>
                                 <li className="listedSkill">MongoDB</li>
+                                <li className="listedSkill">PostgreSQL</li>
+                                <li className="listedSkill">SQL</li>
                             </ul>
                         </div>
                     </div>
