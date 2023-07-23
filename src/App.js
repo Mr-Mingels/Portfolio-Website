@@ -1,8 +1,9 @@
 import './App.css';
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 
 const App = () => {
+  const [newPortActive, setNewPortActive] = useState(true)
 
   const NavBar = lazy(() => import('./components/navbar'));
   const Main = lazy(() => import('./components/main'));
@@ -18,6 +19,17 @@ const App = () => {
     React.useEffect(() => {
       navigate('/');
     }, [navigate]);
+  }
+
+  if (newPortActive) {
+    return (
+      <div className='newPortWrapper'>
+          <div className='newPortContent'>
+              <span>This Web Application is no longer my Portfolio Website. Check out my new Portfolio Website by clicking the link below!</span>
+              <a href='https://pierre-mingels.vercel.app/'>New Portfolio Website</a>
+          </div>
+      </div>
+    )
   }
 
   return (
