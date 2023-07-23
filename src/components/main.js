@@ -1,10 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import "../styles/main.css";
 
 const Main = () => {
   const [showAnimation, setShowAnimation] = useState(false);
   const contentRef = useRef(null);
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    navigate('https://pierre-mingels.vercel.app/')
+  },[])
 
   useEffect(() => {
     // Create an observer instance

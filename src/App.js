@@ -20,10 +20,6 @@ const App = () => {
     }, [navigate]);
   }
 
-  useEffect(() => {
-    navigate('https://pierre-mingels.vercel.app/')
-  },[])
-
   return (
     <div className="App">
       <BrowserRouter>
