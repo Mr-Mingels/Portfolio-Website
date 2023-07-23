@@ -25,7 +25,7 @@ const App = () => {
     return (
       <div className='newPortWrapper'>
           <div className='newPortContent'>
-              <span>This Web Application is no longer my Portfolio Website. Check out my new Portfolio Website by clicking the link below!</span>
+              <span className='newPortTxt'>This Web Application is no longer my Portfolio Website. Check out my new Portfolio Website by clicking the link below!</span>
               <a href='https://pierre-mingels.vercel.app/'>New Portfolio Website</a>
           </div>
       </div>

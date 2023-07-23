@@ -82,3 +82,8 @@ body {
   align-items: center;
   gap: 12px;
 }
+
+.newPortTxt {
+  color: white;
+  width: 300px;
+}
